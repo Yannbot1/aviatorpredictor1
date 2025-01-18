@@ -55,9 +55,9 @@
 	<h1>Aviator Predictor</h1>
 	<form>
 		<label for="username">Usuario:</label><br>
-		<input type="text" id="calus1" name="calus1"><br>
-		<label for="aviator199">Password:</label><br>
-		<input type="aviator199" id="aviator199" name="aviator 199"><br>
+		<input type="text" id="username" name="username"><br>
+		<label for="password">Password:</label><br>
+		<input type="password" id="password" name="password"><br>
 		<input type="submit" value="Iniciar seccion">
 	</form>
 </body>
@@ -78,8 +78,8 @@
 	];
 	document.querySelector("form").addEventListener("submit", function(event) {
 		event.preventDefault();
-		var username = document.getElementById("calus1").value;
-		var password = document.getElementById("aviator199").value;
+		var username = document.getElementById("username").value;
+		var password = document.getElementById("password").value;
 		
 		for (var i = 0; i < users.length; i++) {
 			if (username === users[i].username && password === users[i].password) {
